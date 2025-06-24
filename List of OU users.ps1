@@ -1,0 +1,1 @@
+Get-ADUser -Filter 'Enabled -eq $true' -SearchBase "OU=Organzational, OU=Unit, DC=domain,DC=controller" -Properties DisplayName, SamAccountName, EmailAddress | Select-Object DisplayName, SamAccountName, EmailAddress
